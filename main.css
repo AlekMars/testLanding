@@ -87,19 +87,17 @@ text-decoration: underline;
 
 }
 .section_one {
-    display: flex;
+display: flex;
+
 }
 .about_head {
 padding-top: 143px;
 padding-left: 100px;
-
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 64px;
 line-height: 70px;
-/* or 109% */
-
 display: flex;
 align-items: flex-end;
 
@@ -107,8 +105,8 @@ color: #FFFFFF;
 
 }
 .about_description {
-    margin: 129px 0px 0px 205px;
-    font-family: 'Noto Sans';
+margin: 129px 0px 0px 205px;
+font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -141,18 +139,19 @@ transform: rotate(120.61deg);
 
 .gradient_right {
 position: absolute;
-width: 33%;
-height: 500px;
-
+width: 662.63px;
+height: 783.03px;
+left: 835.35px;
+top: 150.31px;
 
 background: rgba(250, 0, 255, 0.2);
 filter: blur(125px);
 transform: rotate(-105.26deg);
-z-index: -1;
 
 
 }
 .phone_img {
+position: relative;
 margin-top: -145px;
 
 }
