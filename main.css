@@ -293,13 +293,10 @@ color: #FFFFFF;
  display: flex;
  align-items: flex-start;
 }
-.mission_pic {
-    width: 428.16px;
-height: 858.94px;
-   transform: rotate(90deg);
-}
 .mission_promo {
-    margin-left: 230px;
+    
+    margin-top: 236px;
+   
 }
 .promo_head{
 font-family: 'Montserrat';
