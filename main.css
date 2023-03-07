@@ -19,7 +19,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
     font-family: 'Montserrat','Noto Sans', sans-serif;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -46,9 +45,14 @@ table {
 	border-spacing: 0;
 }
 
-html {
-    max-width: 1440px;
-     /* background-color: #000000; */
+html, body {
+    height: 100%;
+ background-color: #000000;
+}
+.wrapper {
+    background-color: #000000;
+    width: 1440px; 
+    margin:0 auto; 
 }
 .header_inner{
     background-color: #000000;
@@ -58,8 +62,12 @@ html {
    
    
 }
+.logo_link {
+    display: flex;
+    align-items: center;
+}
 main {
-    background-color: #000000;
+  width: auto;  
 }
 .header_logo{
 margin-left: 85px;
@@ -72,23 +80,33 @@ margin-left: 85px;
 
 }
 .header_nav {
- margin-top: 42px;
- margin-left: 108px;
+display: flex;
+align-items: center;
+gap: 14px;
+margin-left: 148px;
 }
+
+
 .header_login-pic {
-
-
 font-family: 'Noto Sans';
+font-style: normal;
 font-weight: 500;
 font-size: 18px;
-line-height: 24.52px;
+line-height: 25px;
 color: #FFFFFF;
-text-decoration: underline;
+border: 1px solid #000000;
+text-decoration: none;
+border-bottom: 1px solid #FFFFFF;
 
 }
 .section_one {
+    position: relative;
 display: flex;
 
+
+}
+.about_head_mob {
+    display: none;
 }
 .about_head {
 padding-top: 143px;
@@ -105,7 +123,7 @@ color: #FFFFFF;
 
 }
 .about_description {
-margin: 129px 0px 0px 205px;
+    margin: 129px 0px 0px 205px;
 font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 400;
@@ -119,30 +137,28 @@ color: #FFFFFF;
 }
 .gradient_left {
 
-    width: 125px;
-    height: 125px;
-    margin-top: -162px;
-    margin-left: 93px;
-    
-    background: rgba(96, 92, 234, 0.5);
-    filter: blur(50px);
+width: 125px;
+height: 125px;
+margin-top: -162px;
+margin-left: 93px;
+background: rgba(96, 92, 234, 0.5);
+filter: blur(50px);
 }
 .left_line {
-
 margin-left: 55px;
-width: 139.43px;
+width: 139px;
 height: 0px;
-
 border: 3px solid #FFFFFF;
 transform: rotate(120.61deg);
 }
 
+
 .gradient_right {
-position: absolute;
-width: 662.63px;
-height: 783.03px;
-left: 835.35px;
-top: 150.31px;
+position:relative;
+width: 663px;
+height: 783px;
+left: 100px;
+bottom: 350px;
 
 background: rgba(250, 0, 255, 0.2);
 filter: blur(125px);
@@ -150,18 +166,23 @@ transform: rotate(-105.26deg);
 
 
 }
+.phone_mobile {
+    display: none;
+}
 .phone_img {
-position: relative;
-margin-top: -145px;
+position: absolute;
+top: -130px;
+right: 7%;
+
 
 }
 .wrapper_icon {
-    display: flex;
-    padding-left: 100px;
-    margin-bottom: 25px;
+display: flex;
+padding-left: 100px;
+margin-bottom: 25px;
 }
 .about_text {
-    font-family: 'Montserrat';
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 35px;
@@ -177,6 +198,9 @@ color: #FFFFFF;
 }
 .playmarket_icon {
     margin-left: 29px;
+}
+.alert_cookieMob {
+    display: none;
 }
 .alert_cookie {
 
@@ -195,9 +219,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 19px;
-/* identical to box height */
-
-
 color: #FFFFFF;
 
 }
@@ -212,8 +233,14 @@ font-weight: 400;
 font-size: 14px;
 line-height: 19px;
 text-align: center;
-
 color: #FFFFFF;
+}
+button:hover {
+    background: rgb(218, 186, 10);
+   transition: 0.7s;
+   cursor: pointer;
+
+
 }
 .section_info {
 margin-top: 61px;
@@ -290,14 +317,41 @@ color: #FFFFFF;
 }
 .mission_block {
  display: flex;
- align-items: flex-start;
+ justify-content: space-between;
+}
+.mission_imgMob {
+    display: none;
+}
+.mission_img {
+    width: 498px;
+    height: 999px;  
+    position: absolute;
+    left: 52.16%;
+    right: 13.26%;
+    top: 15.66%;
+    bottom: 75.07%;
+    
+    background: url(Image.png);
+    transform: rotate(90deg);
 }
 .mission_promo {
     
-    margin-top: 236px;
+   
    
 }
+.mission_gradient {
+position: absolute;
+width: 85px;
+height: 85px;
+right: 900px;
+top: 1686px;
+
+background: #F101BF;
+opacity: 0.7;
+filter: blur(50px);
+}
 .promo_head{
+    margin: 236px 163px 0px 0px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -318,6 +372,24 @@ align-items: flex-end;
 color: #FFFFFF;
 
 }
+.section_scanner {
+width: 100%;
+height: 836px;
+background-image: url("./img/barmen.png");
+background-size: 100%;
+
+
+}
+.section_gradient {
+
+width: 100%;
+height: 100%;
+left: 0px;
+top: 2470px;
+
+background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
+
+}
 
 
 
@@ -328,42 +400,261 @@ color: #FFFFFF;
 
 
 
-@media (max-width: 768px) {
-    .header_inner {
-        
-        padding: 0px 15px 0px 15px;
-        justify-content: space-between;
+
+@media (max-width: 769px) {
+    
+    .wrapper {
+    width: 375px;
+    max-width: 375px;
+    margin:0 auto;
     }
-    .header_notab {
+    .header_inner {
+    justify-content: space-between;
+    padding: 40px 15px 0px 15px;
        
     }
-    .header_user-pic {
-        display: none;
-    }
-    .header_logo{
-        margin-left: 0px;
-    }
-    .gradient_right {
-        position: absolute;
-        width: 20%;
-        height: 783.03px;
-    }
-    .wrapper_icon {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 15px;
+    .header_notab {
+    width: 47px;
+    height: 12px;
         
     }
+    .header_user-pic {
+    display: none;
+    }
+    .header_logo{
+    width: 52px;
+    height: 53px;
+    margin-left: 0px;
+    }
+    .header_login-pic {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 6px;
+    }
+    .about_left {
+    display: flex;
+    }
+    .about_head {
+    display: none;
+    }
+    .about_head_mob {
+    display: initial;
+    margin: 117px 0px 0px 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+    }
+    .about_description {
+    margin: 24px 0px 0px 15px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    }
+   
+    .about_left {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .phone_img {
+    display: none;
+    }
+    .phone_mobile {
+    display: initial;
+
+    }
+    .gradient_left {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: -4px;
+    top: 317px;
+
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(50px);
+    }
+    .left_line {
+    display: none;
+    }
+    .gradient_right {
+    position: absolute;
+    width: 20%;
+    height: 783.03px;
+    }
+    .wrapper_icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0px;
+        
+    }
+    .about_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+    margin: 113px 0px 34px 46px;
+
+    }
     .appstore_icon {
-        margin-left: 0;
-        width: 185px;
-        height: 60px;
+    margin-left: 95px;
+    width: 185px;
+    height: 60px;
     }
     .playmarket_icon {
-        margin-left: 0;
-        width: 185px;
-        height: 60px;
-        margin-bottom: 10px;
+    margin-left: 95px;
+    width: 185px;
+    height: 60px;
+    margin-bottom: 10px;
     }
- }
+    .alert_cookie {
+    display: none;
+    }
+    .alert_cookieMob {
+        padding: 23px 15px 22px 15px;
+        display: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        background: #212834;
+    }
+    .text_cookieMob {
+     
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+color: #FFFFFF;
+
+    }
+    .button_cookieMob {
+        font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+color: #FFFFFF;
+
+    }
+    .section_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    }
+    .info_one {
+    width: 345px;
+    height: 233px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21.3671px;
+    }
+    .one_text {
+    padding: 39px 54px 30px 33px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    }
+    .one_mail {
+    margin-left: 33px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+
+    }
+    .info_two {
+    padding: 35px;
+    margin-left: 0;
+    width: 345px;
+    height: 167px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21.3671px;
+    }
+    .two_text {
+     padding: 0;
+     font-family: 'Noto Sans';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 33px;
+     color: #FFFFFF;
+
+    }
+    .two_login {
+    width: 48px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    }
+    .mission_promo {
+        margin-left: 15px;
+    }
+    .mission_gradient {
+        position: absolute;
+width: 85px;
+height: 85px;
+left: -3px;
+top: 1600px;
+
+background: #F101BF;
+opacity: 0.7;
+filter: blur(50px);
+    }
+    .mission_block {
+        flex-direction: column-reverse;
+    }
+    .mission_pic {
+        margin-top: 163px;
+    }
+    .mission_img {
+        display: none;
+    }
+    .mission_imgMob {
+        display: initial;
+        
+    }
+    .promo_description {
+        margin-top: 24px;
+    }
+ }    
