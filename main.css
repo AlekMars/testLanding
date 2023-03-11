@@ -530,15 +530,12 @@ color: #FFFFFF;
     gap: 80px;
 }
 .qr_night {
-    width: 88px;
-    height: 35px;
-    position: relative;
-    bottom: 198px;
-    right: 81px;
+    position: absolute;
+    top: 0;
+    right: 50px;
 }
 .qr_left {
     position: relative;
-    top: 261px;
     width: 333px;
 }
 .qr_right {
@@ -921,6 +918,7 @@ width: 287px;
 
     }
     .qr_img {
+        top: -64px;
         gap: 0px;
         align-items: center;
         margin-right: 0px;
@@ -939,11 +937,11 @@ width: 287px;
         top: 207px;
     }
     .qr_left {
-        top: -124px;
+        bottom: 75px;
         width: 281px;
     }
     .qr_right {
-        top: -50px;
+        top: -33px;
         width: 281px;
     }
     .qr_heads {
@@ -972,6 +970,12 @@ color: #FFFFFF;
     .playmarket_qr {
         width: 185px;
         height: 60px;
+    }
+    .qr_night {
+        width: 88px;
+        position: relative;
+        top: -112px;
+        right: 91px;
     }
  }    
  @media (max-width: 1320px) and (min-width: 768px) {
